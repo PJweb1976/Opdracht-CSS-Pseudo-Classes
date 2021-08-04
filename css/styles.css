@@ -1,6 +1,22 @@
 a {
   color: black;
 }
+h3::before {
+  content: "hello";
+  background: red;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  display: block;
+}
+h3::after {
+  content: "";
+  background: red;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
 nav {
   background-color: blue;
   padding: 10px;
@@ -20,12 +36,12 @@ li :first-child {
   background-color: #4679f2;
   padding: 10px;
 }
-.currentPage :hover {
+.currentPage:hover {
   background-color: lightblue;
   text-decoration-line: none;
   padding: 10px;
 }
-.input :focus {
+.input:focus {
   border: aqua;
 }
 
